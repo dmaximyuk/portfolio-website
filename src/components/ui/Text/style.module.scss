@@ -1,0 +1,12 @@
+@import "../../../style/index.scss";
+
+.Text {
+  font: {
+    family: $fonts-familty-text;
+    size: 16px;
+    weight: $font-weight-text;
+    style: normal;
+  }
+  color: $black;
+  line-height: 32px;
+}

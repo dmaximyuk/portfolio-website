@@ -1,0 +1,12 @@
+{
+  "user.name": "Dmitry",
+  "user.lastName": "Maximyuk",
+  "navigation.button.center.title.1": "Services",
+  "navigation.button.center.title.2": "Portfolio",
+  "navigation.button.center.title.3": "Experience",
+  "navigation.button.center.title.4": "Blog",
+  "navigation.button.right.title.1": "Resume",
+  "section.about.subheader": "MY NAME IS",
+  "section.about.me.header": "Dmitry Maximyuk",
+  "section.about.me.text": "Front-end developer with more than {exp} years of experience in enterprise companies and startups. Proficient in JavaScript, TypeScript, and React JS. Passionate about mobile and desktop development."
+}

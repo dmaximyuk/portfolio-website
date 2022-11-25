@@ -1,0 +1,21 @@
+@import "../../../style/index.scss";
+
+.Subheader {
+  font: {
+    family: $fonts-familty-subheader;
+    size: 12px;
+    weight: $font-weight-subheader;
+    style: normal;
+  }
+  line-height: 24px;
+  letter-spacing: 7.5px;
+  color: $gray;
+  line-height: 24px;
+  margin-bottom: 8px;
+
+  &::before {
+    content: "\2014";
+    color: #d9d9d9;
+    margin-right: 16px;
+  }
+}

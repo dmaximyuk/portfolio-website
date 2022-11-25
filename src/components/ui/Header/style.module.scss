@@ -1,0 +1,12 @@
+@import "../../../style/index.scss";
+
+.Header {
+  font: {
+    family: $fonts-familty-header;
+    size: 45px;
+    weight: $font-weight-header;
+    style: normal;
+  }
+  color: $black;
+  line-height: 55px;
+}

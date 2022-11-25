@@ -1,0 +1,50 @@
+@import "../../../style/index.scss";
+
+.About {
+  & {
+    height: calc(100vh - 200px);
+    max-height: 1300px;
+    gap: 30px;
+
+    @include mq-tablet {
+      height: auto;
+      padding: 30px 0;
+    }
+
+    @include mq-phone {
+      padding: 30px 0;
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
+  }
+
+  &__container {
+    &-social {
+      display: flex;
+      gap: 30px;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    &-image {
+      @include mq-phone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-text {
+      max-width: 538px;
+
+      @include mq-tablet {
+        max-width: 423px;
+      }
+    }
+  }
+
+  &__header {
+    margin-bottom: 32px;
+  }
+}

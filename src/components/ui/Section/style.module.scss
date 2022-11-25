@@ -1,0 +1,53 @@
+@import "../../../style/index.scss";
+
+.Section {
+  min-height: 75px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: inherit;
+  font: inherit;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    margin: 0 auto;
+    width: 76vw;
+    max-width: 1400px;
+    min-width: 280px;
+
+    @include mq-laptop {
+      width: 86vw;
+    }
+
+    @include mq-tablet {
+      width: calc(100% - ($padding-tablet * 2));
+    }
+
+    @include mq-phone {
+      width: calc(100% - ($padding-phone * 2));
+    }
+  }
+  // @include mq-wq-desktop {
+  //   padding: 60px $padding-wq-desktop;
+  // }
+
+  // @include mq-laptop {
+  //   padding: 60px $padding-laptop;
+  // }
+
+  // @include mq-phone {
+  //   padding: 60px $padding-phone;
+  // }
+
+  &_color {
+    &-white {
+      background-color: $white;
+    }
+
+    &-gray {
+      background-color: $light-gray;
+    }
+  }
+}

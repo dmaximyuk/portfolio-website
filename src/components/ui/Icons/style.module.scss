@@ -1,0 +1,16 @@
+@import "../../../style/index.scss";
+
+.Icons {
+  transition: color 0.2s;
+  color: $black;
+
+  &:hover {
+    color: $gray;
+  }
+
+  & > div > div > svg {
+    width: 24px;
+    height: 24px;
+    color: inherit;
+  }
+}
