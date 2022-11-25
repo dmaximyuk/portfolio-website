@@ -3,6 +3,7 @@
 .Icons {
   transition: color 0.2s;
   color: $black;
+  text-decoration: none;
 
   &:hover {
     color: $gray;

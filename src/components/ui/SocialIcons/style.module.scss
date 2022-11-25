@@ -1,0 +1,13 @@
+@import "../../../style/index.scss";
+
+.SocialIcons {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  margin-top: 40px;
+  font: {
+    size: 24px;
+    weight: bold;
+    family: $fonts-family-header;
+  }
+}
