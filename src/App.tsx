@@ -1,12 +1,13 @@
 import React from "react";
 
-import { About, Header } from "./components/sections";
+import { About, Header, Specialization } from "./components/sections";
 
 const App: React.FC = () => {
   return (
     <>
       <Header />
       <About />
+      <Specialization />
     </>
   );
 };

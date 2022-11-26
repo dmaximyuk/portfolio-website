@@ -4,8 +4,9 @@ import Section from "./Section";
 import Header from "./Header";
 import Text from "./Text";
 import Subheader from "./Subheader";
-import Icons from "./Icons";
+import LinkedIcon from "./LinkedIcon";
 import SocialIcons from "./SocialIcons";
+import SpecializationCard from "./SpecializationCard";
 
 export {
   Logo,
@@ -14,6 +15,7 @@ export {
   Header,
   Text,
   Subheader,
-  Icons,
+  LinkedIcon,
   SocialIcons,
+  SpecializationCard,
 };

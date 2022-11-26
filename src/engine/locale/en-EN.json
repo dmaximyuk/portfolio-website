@@ -8,5 +8,13 @@
   "navigation.button.right.title.1": "Resume",
   "section.about.subheader": "MY NAME IS",
   "section.about.me.header": "Dmitry Maximyuk",
-  "section.about.me.text": "Front-end developer with more than {exp} years of experience in enterprise companies and startups. Proficient in JavaScript, TypeScript, and React JS. Passionate about mobile and desktop development."
+  "section.about.me.text": "Front-end developer with more than {exp} years of experience in enterprise companies and startups. Proficient in JavaScript, TypeScript, and React JS. Passionate about mobile and desktop development.",
+  "section.specialization.subheader": "SERVICES",
+  "section.specialization.me.header": "Specialized in",
+  "section.specialization.me.card.1.header": "",
+  "section.specialization.me.card.1.text": "",
+  "section.specialization.me.card.2.header": "",
+  "section.specialization.me.card.2.text": "",
+  "section.specialization.me.card.3.header": "",
+  "section.specialization.me.card.3.text": ""
 }

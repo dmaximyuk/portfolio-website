@@ -21,3 +21,13 @@
     @content;
   }
 }
+
+@mixin page-adaptive {
+  height: calc(100vh - 200px);
+  max-height: 1300px;
+
+  @include mq-tablet {
+    height: auto;
+    padding: 30px 0;
+  }
+}
