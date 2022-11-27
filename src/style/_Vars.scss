@@ -3,13 +3,19 @@ $white: #ffffff;
 $black: #232e35;
 $light-gray: #fbfbfb;
 $gray: #656d72;
+$purple: #7e74f1;
+$light-purple: #f5f3fe;
+$accent: $purple;
+
+// page paddings
+$padding-phone: 20px;
 
 // media query
-$padding-phone: 15px;
-$padding-tablet: 45px;
-$padding-laptop: 80px;
-$padding-desktop: 35vh;
-$padding-wq-desktop: 40vh;
+$adaptive-padding-phone: 65px;
+$adaptive-padding-tablet: 45px;
+$adaptive-padding-laptop: 80px;
+$adaptive-padding-desktop: 105px;
+$adaptive-padding-wq-desktop: 125px;
 
 // fonts
 $fonts-family-default: sans-serif;

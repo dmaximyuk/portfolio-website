@@ -1,0 +1,16 @@
+@import "../../../style/index.scss";
+
+.SpecializationCard {
+  width: 100%;
+  height: 294px;
+  background-color: $white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include mq-phone {
+    width: 100%;
+  }
+}

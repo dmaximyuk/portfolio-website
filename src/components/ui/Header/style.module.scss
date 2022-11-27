@@ -3,10 +3,27 @@
 .Header {
   font: {
     family: $fonts-family-header;
-    size: 45px;
     weight: $font-weight-header;
     style: normal;
   }
   color: $black;
-  line-height: 55px;
+
+  &_size {
+    &-m {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &-l {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    &-xl {
+      font-size: 45px;
+      line-height: 55px;
+    }
+  }
 }

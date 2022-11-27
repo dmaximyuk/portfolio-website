@@ -6,13 +6,26 @@ import style from "./style.module.scss";
 
 interface IHeader {
   className?: string;
+  size?: "l" | "xl" | "m";
   id: string;
 }
 
-const Header: React.FC<IHeader> = ({ className, id }) => {
+const Header: React.FC<IHeader> = ({ className, size = "m", id }) => {
   return (
     <FormattedMessage id={id}>
-      {(str) => <h1 className={cn(style.Header, className)}>{str}</h1>}
+      {(str) => (
+        <h1
+          className={cn(
+            {
+              [style.Header]: true,
+              [style[`Header_size-${size}`]]: true,
+            },
+            className
+          )}
+        >
+          {str}
+        </h1>
+      )}
     </FormattedMessage>
   );
 };

@@ -1,11 +1,36 @@
 @import "../../../style/index.scss";
 
 .Section {
+  position: relative;
   min-height: 75px;
   width: 100%;
+  padding: $adaptive-padding-desktop 0;
+  max-height: 1000px;
   margin: 0 auto;
   cursor: inherit;
   font: inherit;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include mq-tablet {
+    height: auto;
+    padding: $adaptive-padding-tablet 0;
+    max-height: none;
+  }
+
+  @include mq-phone {
+    height: auto;
+    padding: $adaptive-padding-phone 0;
+    max-height: none;
+  }
+
+  @include mq-wq-desktop {
+    height: auto;
+    padding: $adaptive-padding-wq-desktop 0;
+    max-height: none;
+  }
 
   &__container {
     display: flex;
@@ -15,31 +40,20 @@
     margin: 0 auto;
     width: 76vw;
     max-width: 1400px;
-    min-width: 280px;
+    min-width: 300px;
 
     @include mq-laptop {
       width: 86vw;
     }
 
     @include mq-tablet {
-      width: calc(100% - ($padding-tablet * 2));
+      width: calc(100% - 64px);
     }
 
     @include mq-phone {
-      width: calc(100% - ($padding-phone * 2));
+      width: calc(100% - 40px);
     }
   }
-  // @include mq-wq-desktop {
-  //   padding: 60px $padding-wq-desktop;
-  // }
-
-  // @include mq-laptop {
-  //   padding: 60px $padding-laptop;
-  // }
-
-  // @include mq-phone {
-  //   padding: 60px $padding-phone;
-  // }
 
   &_color {
     &-white {

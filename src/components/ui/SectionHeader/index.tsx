@@ -18,7 +18,7 @@ const SectionHeader: React.FC<ISectionHeader> = ({
   return (
     <div {...props}>
       <Subheader id={subheaderId} />
-      <Header id={headerId} className={style.SectionHeader} />
+      <Header id={headerId} className={style.SectionHeader} size="xl" />
     </div>
   );
 };

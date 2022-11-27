@@ -2,14 +2,25 @@ import React from "react";
 
 import { Header, Text } from "..";
 
-interface ICard {
-  src: React.ReactNode;
+import style from "./style.module.scss";
+
+interface ISpecializationCard {
+  icon?: React.ReactNode;
+  headerId: string;
+  textId: string;
 }
 
-//! TODO: Make flashcards
-
-const Card: React.FC<ICard> = () => {
-  return <div></div>;
+const SpecializationCard: React.FC<ISpecializationCard> = ({
+  icon,
+  headerId,
+  textId,
+}) => {
+  return (
+    <div className={style.SpecializationCard}>
+      <Header id={headerId} />
+      <Text id={textId} />
+    </div>
+  );
 };
 
-export default Card;
+export default SpecializationCard;
