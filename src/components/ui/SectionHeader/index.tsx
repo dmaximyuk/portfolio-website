@@ -1,18 +1,24 @@
 import React from "react";
-import { FormattedMessage } from "react-intl";
 
-import { Header } from "..";
+import { Header, Subheader } from "..";
+
+import style from "./style.module.scss";
 
 interface ISectionHeader {
+  className?: string;
   headerId: string;
-  subHeaderId: string;
+  subheaderId: string;
 }
 
-const SectionHeader: React.FC<ISectionHeader> = ({ headerId, subHeaderId }) => {
+const SectionHeader: React.FC<ISectionHeader> = ({
+  headerId,
+  subheaderId,
+  ...props
+}) => {
   return (
-    <div>
-      <FormattedMessage>{(str) => <h3>{str}</h3>}</FormattedMessage>
-      <Header id={headerId} />
+    <div {...props}>
+      <Subheader id={subheaderId} />
+      <Header id={headerId} className={style.SectionHeader} />
     </div>
   );
 };

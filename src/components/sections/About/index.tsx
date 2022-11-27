@@ -1,6 +1,8 @@
 import React from "react";
 
-import { Header, Text, Section, Subheader, SocialIcons } from "../../ui";
+import { Text, Section, SocialIcons, SectionHeader } from "../../ui";
+
+import AboutPhoto from "../../../assets/photos/about_2.jpg";
 
 import style from "./style.module.scss";
 
@@ -12,13 +14,15 @@ const About: React.FC<IAbout> = () => {
   return (
     <Section className={style.About} type="white">
       <div className={style["About__container-text"]}>
-        <Subheader id={`${id}.subheader`} />
-        <Header id={`${id}.me.header`} className={style.About__header} />
+        <SectionHeader
+          subheaderId={`${id}.subheader`}
+          headerId={`${id}.me.header`}
+        />
         <Text id={`${id}.me.text`} values={{ exp: 2 }} />
         <SocialIcons />
       </div>
       <div className={style["About__container-image"]}>
-        <img src="https://via.placeholder.com/336x400" alt=""></img>
+        <img src={AboutPhoto} alt=""></img>
       </div>
     </Section>
   );

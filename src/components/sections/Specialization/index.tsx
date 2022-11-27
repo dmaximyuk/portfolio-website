@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header, Text, Section, Subheader, SocialIcons } from "../../ui";
+import { Section, SectionHeader } from "../../ui";
 
 import style from "./style.module.scss";
 
@@ -12,13 +12,10 @@ const Specialization: React.FC<ISpecialization> = () => {
   return (
     <Section className={style.Specialization} type="gray">
       <div className={style["Specialization__container-header"]}>
-        <div>
-          <Subheader id={`${id}.subheader`} />
-          <Header
-            id={`${id}.me.header`}
-            className={style.Specialization__header}
-          />
-        </div>
+        <SectionHeader
+          subheaderId={`${id}.subheader`}
+          headerId={`${id}.me.header`}
+        />
       </div>
     </Section>
   );

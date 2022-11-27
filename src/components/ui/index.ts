@@ -7,6 +7,7 @@ import Subheader from "./Subheader";
 import LinkedIcon from "./LinkedIcon";
 import SocialIcons from "./SocialIcons";
 import SpecializationCard from "./SpecializationCard";
+import SectionHeader from "./SectionHeader";
 
 export {
   Logo,
@@ -18,4 +19,5 @@ export {
   LinkedIcon,
   SocialIcons,
   SpecializationCard,
+  SectionHeader,
 };
