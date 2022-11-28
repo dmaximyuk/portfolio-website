@@ -2,7 +2,7 @@ import React from "react";
 
 import { Text, Section, SocialIcons, SectionHeader } from "../../ui";
 
-import AboutPhoto from "../../../assets/photos/about_2.jpg";
+import AboutPhoto from "../../../assets/photos/about_3.jpg";
 
 import style from "./style.module.scss";
 
