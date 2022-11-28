@@ -3,8 +3,6 @@
 .Specialization {
   & {
     @include mq-phone {
-      align-items: flex-start;
-      flex-direction: column-reverse;
       gap: 32px;
     }
   }
@@ -19,14 +17,12 @@
 
     &-card {
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      justify-content: space-between;
       gap: 52px;
 
       @include mq-tablet {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        gap: $padding-phone;
+        flex-wrap: wrap;
       }
     }
   }

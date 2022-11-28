@@ -16,5 +16,17 @@
   "section.specialization.card.2.header": "Backend Developer",
   "section.specialization.card.2.text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt pharetra condimentum.",
   "section.specialization.card.3.header": "Mobile Developer",
-  "section.specialization.card.3.text": "Mauris quis risus convallis, vestibulum turpis et, pretium metus. Nam felis turpis, bibendum vel dolor porta, condimentum sagittis enim."
+  "section.specialization.card.3.text": "Mauris quis risus convallis, vestibulum turpis et, pretium metus. Nam felis turpis, bibendum vel dolor porta, condimentum sagittis enim.",
+  "section.myworks.subheader": "MY WORKS",
+  "section.myworks.header": "Featured Portfolios",
+  "section.myworks.card.1.header": "Admin panel &#8594;",
+  "section.myworks.card.1.technology.1": "React JS",
+  "section.myworks.card.2.header": "Landing Page &#8594;",
+  "section.myworks.card.2.technology.1": "HTML",
+  "section.myworks.card.2.technology.2": "CSS",
+  "section.myworks.card.3.header": "Shop Website &#8594;",
+  "section.myworks.card.3.technology.1": "React JS",
+  "section.myworks.card.4.header": "Telegram Game Bot &#8594;",
+  "section.myworks.card.4.technology.1": "JavaScript",
+  "section.myworks.card.4.technology.2": "TypeScript"
 }

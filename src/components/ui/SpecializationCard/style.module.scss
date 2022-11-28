@@ -11,8 +11,16 @@
   padding: 53px 57px;
   box-sizing: border-box;
 
+  @include mq-tablet {
+    flex: 1;
+
+    &:last-child {
+      flex: none;
+    }
+  }
+
   @include mq-phone {
-    width: 100%;
+    flex: none;
   }
 
   &__header {
