@@ -8,6 +8,7 @@ import LinkedIcon from "./LinkedIcon";
 import SocialIcons from "./SocialIcons";
 import SpecializationCard from "./SpecializationCard";
 import SectionHeader from "./SectionHeader";
+import IconButton from "./IconButton";
 
 export {
   Logo,
@@ -20,4 +21,5 @@ export {
   SocialIcons,
   SpecializationCard,
   SectionHeader,
+  IconButton,
 };

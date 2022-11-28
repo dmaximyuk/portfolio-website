@@ -3,10 +3,25 @@
 .Text {
   font: {
     family: $fonts-family-text;
-    size: 16px;
     weight: $font-weight-text;
     style: normal;
   }
   color: $black;
-  line-height: 32px;
+
+  &_size {
+    &-m {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &-l {
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    &-xl {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
 }

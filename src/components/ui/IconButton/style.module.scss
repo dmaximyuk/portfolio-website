@@ -1,0 +1,17 @@
+@import "../../../style/index.scss";
+
+.IconButton {
+  &__container {
+    width: 56px;
+    height: 56px;
+    background-color: $light-purple;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+      width: 60%;
+    }
+  }
+}

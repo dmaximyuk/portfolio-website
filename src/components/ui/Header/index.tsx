@@ -2,11 +2,13 @@ import React from "react";
 import cn from "classnames";
 import { FormattedMessage } from "react-intl";
 
+import { TSize } from "../../../engine/types";
+
 import style from "./style.module.scss";
 
 interface IHeader {
   className?: string;
-  size?: "l" | "xl" | "m";
+  size?: TSize;
   id: string;
 }
 

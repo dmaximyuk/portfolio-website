@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Header, Text } from "..";
+import { Header, IconButton, Text } from "..";
 
 import style from "./style.module.scss";
 
 interface ISpecializationCard {
-  icon?: React.ReactNode;
+  icon?: string;
   headerId: string;
   textId: string;
 }
@@ -17,8 +17,9 @@ const SpecializationCard: React.FC<ISpecializationCard> = ({
 }) => {
   return (
     <div className={style.SpecializationCard}>
-      <Header id={headerId} />
-      <Text id={textId} />
+      <IconButton isNotButton isDisabled src={icon} />
+      <Header className={style.SpecializationCard__header} id={headerId} />
+      <Text className={style.SpecializationCard__text} id={textId} size="m" />
     </div>
   );
 };
