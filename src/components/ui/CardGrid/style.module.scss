@@ -1,0 +1,19 @@
+@import "../../../style/index.scss";
+
+.CardGrid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 52px;
+  transition: 0.5s;
+
+  @include mq-tablet {
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include mq-phone {
+    gap: 20px;
+  }
+}

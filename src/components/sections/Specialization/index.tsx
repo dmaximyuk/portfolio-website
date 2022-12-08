@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Section, SectionHeader, SpecializationCard } from "../../ui";
+import { CardGrid, Section, SectionHeader, SpecializationCard } from "../../ui";
 
 import style from "./style.module.scss";
 
@@ -12,31 +12,27 @@ interface ISpecialization {}
 
 const Specialization: React.FC<ISpecialization> = () => {
   const id = "section.specialization";
+  const images = [IconWebDev, IconBackend, IconMobileDev];
 
   return (
     <Section className={style.Specialization} type="gray">
-      <div className={style["Specialization__container-header"]}>
-        <SectionHeader
-          className={style.Specialization__header}
-          subheaderId={`${id}.subheader`}
-          headerId={`${id}.header`}
-        />
-        <div className={style["Specialization__container-card"]}>
-          {Array.from(Array(3), (_, i) => {
-            const index = i + 1;
-            const image = [IconWebDev, IconBackend, IconMobileDev];
-
-            return (
-              <SpecializationCard
-                icon={image[i]}
-                key={`spec-card-${i}`}
-                headerId={`${id}.card.${index}.header`}
-                textId={`${id}.card.${index}.text`}
-              />
-            );
-          })}
-        </div>
-      </div>
+      <SectionHeader
+        className={style.Specialization__header}
+        subheaderId={`${id}.subheader`}
+        headerId={`${id}.header`}
+      />
+      <CardGrid iteration={3}>
+        {(_, i) => {
+          return (
+            <SpecializationCard
+              icon={images[i]}
+              key={`spec-card-${i}`}
+              headerId={`${id}.card.${i}.header`}
+              textId={`${id}.card.${i}.text`}
+            />
+          );
+        }}
+      </CardGrid>
     </Section>
   );
 };

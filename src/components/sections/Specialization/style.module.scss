@@ -2,9 +2,7 @@
 
 .Specialization {
   & {
-    @include mq-phone {
-      gap: 32px;
-    }
+    align-items: center;
   }
 
   &__container {
@@ -13,17 +11,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-
-    &-card {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      gap: 52px;
-
-      @include mq-tablet {
-        flex-wrap: wrap;
-      }
     }
   }
 

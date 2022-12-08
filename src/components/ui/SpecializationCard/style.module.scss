@@ -11,11 +11,7 @@
   box-sizing: border-box;
 
   @include mq-tablet {
-    flex: 1;
-
-    &:last-child {
-      flex: none;
-    }
+    flex-basis: calc(50% - 16px);
   }
 
   @include mq-phone {

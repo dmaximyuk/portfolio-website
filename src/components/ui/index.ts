@@ -9,6 +9,7 @@ import SocialIcons from "./SocialIcons";
 import SpecializationCard from "./SpecializationCard";
 import SectionHeader from "./SectionHeader";
 import IconButton from "./IconButton";
+import CardGrid from "./CardGrid";
 
 export {
   Logo,
@@ -22,4 +23,5 @@ export {
   SpecializationCard,
   SectionHeader,
   IconButton,
+  CardGrid,
 };

@@ -34,8 +34,8 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
+    flex-direction: column;
     background-color: inherit;
     margin: 0 auto;
     width: 76vw;
