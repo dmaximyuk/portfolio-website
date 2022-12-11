@@ -6,7 +6,7 @@ import Text from "./Text";
 import Subheader from "./Subheader";
 import LinkedIcon from "./LinkedIcon";
 import SocialIcons from "./SocialIcons";
-import SpecializationCard from "./SpecializationCard";
+import ServicesCard from "./ServicesCard";
 import SectionHeader from "./SectionHeader";
 import IconButton from "./IconButton";
 import CardGrid from "./CardGrid";
@@ -21,7 +21,7 @@ export {
   Subheader,
   LinkedIcon,
   SocialIcons,
-  SpecializationCard,
+  ServicesCard,
   SectionHeader,
   IconButton,
   CardGrid,

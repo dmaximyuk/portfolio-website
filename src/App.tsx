@@ -1,13 +1,13 @@
 import React from "react";
 
-import { About, Header, MyWorks, Specialization } from "./components/sections";
+import { About, Header, MyWorks, Services } from "./components/sections";
 
 const App: React.FC = () => {
   return (
     <>
       <Header />
       <About />
-      <Specialization />
+      <Services />
       <MyWorks />
     </>
   );

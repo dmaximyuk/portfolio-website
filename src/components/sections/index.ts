@@ -1,6 +1,6 @@
 import Header from "./Header";
 import About from "./About";
-import Specialization from "./Specialization";
+import Services from "./Services";
 import MyWorks from "./MyWorks";
 
-export { Header, About, Specialization, MyWorks };
+export { Header, About, Services, MyWorks };
