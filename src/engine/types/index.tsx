@@ -1,1 +1,1 @@
-export type TSize = "m" | "l" | "xl";
+export type TSize = "s" | "m" | "l" | "xl";

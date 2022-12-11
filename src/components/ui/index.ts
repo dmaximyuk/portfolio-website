@@ -11,6 +11,9 @@ import SectionHeader from "./SectionHeader";
 import IconButton from "./IconButton";
 import CardGrid from "./CardGrid";
 import Card from "./Card";
+import MyWorksCard from "./MyWorksCard";
+import Tags from "./Tags";
+import TagsGrid from "./TagsGrid";
 
 export {
   Logo,
@@ -26,4 +29,7 @@ export {
   IconButton,
   CardGrid,
   Card,
+  MyWorksCard,
+  Tags,
+  TagsGrid,
 };

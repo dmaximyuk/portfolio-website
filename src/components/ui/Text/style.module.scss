@@ -9,6 +9,11 @@
   color: $black;
 
   &_size {
+    &-s {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
     &-m {
       font-size: 14px;
       line-height: 24px;

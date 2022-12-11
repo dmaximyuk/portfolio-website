@@ -1,0 +1,13 @@
+@import "../../../style/index.scss";
+
+.Tags {
+  & {
+    padding: 4px 8px;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+  }
+
+  &__text {
+    color: $gray !important;
+  }
+}

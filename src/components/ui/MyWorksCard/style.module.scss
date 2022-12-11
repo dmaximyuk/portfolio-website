@@ -1,0 +1,51 @@
+@import "../../../style/index.scss";
+
+.MyWorksCard {
+  & {
+    cursor: pointer;
+
+    &:hover {
+      & > {
+        .MyWorksCard__container-header {
+          gap: 18px;
+        }
+      }
+    }
+
+    @include mq-tablet {
+      flex-basis: calc(50% - 16px);
+    }
+
+    @include mq-phone {
+      flex: none;
+    }
+  }
+
+  &__container {
+    &-header {
+      margin: 0 24px;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__header {
+    position: relative;
+    font-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-arrow {
+      font-size: 16px;
+    }
+  }
+
+  &__tags {
+    margin: 0 24px;
+    margin-bottom: 24px;
+  }
+}
