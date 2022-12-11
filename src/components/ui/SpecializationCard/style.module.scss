@@ -1,21 +1,19 @@
 @import "../../../style/index.scss";
 
 .SpecializationCard {
-  width: 100%;
-  background-color: $white;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 53px 57px;
-  box-sizing: border-box;
+  & {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 53px 57px;
 
-  @include mq-tablet {
-    flex-basis: calc(50% - 16px);
-  }
+    @include mq-tablet {
+      flex-basis: calc(50% - 16px);
+    }
 
-  @include mq-phone {
-    flex: none;
+    @include mq-phone {
+      flex: none;
+    }
   }
 
   &__header {

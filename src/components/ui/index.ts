@@ -10,6 +10,7 @@ import SpecializationCard from "./SpecializationCard";
 import SectionHeader from "./SectionHeader";
 import IconButton from "./IconButton";
 import CardGrid from "./CardGrid";
+import Card from "./Card";
 
 export {
   Logo,
@@ -24,4 +25,5 @@ export {
   SectionHeader,
   IconButton,
   CardGrid,
+  Card,
 };
