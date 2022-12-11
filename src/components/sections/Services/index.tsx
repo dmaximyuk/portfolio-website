@@ -8,9 +8,7 @@ import IconWebDev from "../../../assets/icons/services/shape.svg";
 import IconBackend from "../../../assets/icons/services/layers.svg";
 import IconMobileDev from "../../../assets/icons/services/crown.svg";
 
-interface IServices {}
-
-const Services: React.FC<IServices> = () => {
+const Services: React.FC = () => {
   const id = "section.services";
   const images = [IconWebDev, IconBackend, IconMobileDev];
 

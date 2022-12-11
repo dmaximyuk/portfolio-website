@@ -1,10 +1,8 @@
 import React from "react";
 
-import { Card, CardGrid, Section, SectionHeader } from "../../ui";
+import { MyWorksCard, CardGrid, Section, SectionHeader } from "../../ui";
 
-interface IMyWorks {}
-
-const MyWorks: React.FC<IMyWorks> = ({}) => {
+const MyWorks: React.FC = () => {
   const id = "section.myworks";
 
   return (
@@ -15,11 +13,7 @@ const MyWorks: React.FC<IMyWorks> = ({}) => {
       />
       <CardGrid iteration={3}>
         {(_, i) => {
-          return (
-            <Card>
-              <>123</>
-            </Card>
-          );
+          return <MyWorksCard headerId={`${id}.card.${i}.header`} />;
         }}
       </CardGrid>
     </Section>

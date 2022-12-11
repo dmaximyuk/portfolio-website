@@ -2,7 +2,7 @@ import React from "react";
 
 interface IHeader {}
 
-const Header: React.FC<IHeader> = ({}) => {
+const Header: React.FC = () => {
   return <header></header>;
 };
 

@@ -6,9 +6,7 @@ import AboutPhoto from "../../../assets/photos/about_3.jpg";
 
 import style from "./style.module.scss";
 
-interface IAbout {}
-
-const About: React.FC<IAbout> = () => {
+const About: React.FC = () => {
   const id = "section.about";
 
   return (
