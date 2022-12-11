@@ -9,6 +9,8 @@ interface ILocaleProvider {
 
 const messages = { en: localeEn, ru: localeRu };
 
+// ! WARNING: Not set auto setup lang and change lang
+
 const LocaleProvider: React.FC<ILocaleProvider> = ({ children }) => {
   const locale: "en" | "ru" = "en";
   const defaultLocale = "en";
