@@ -14,6 +14,7 @@ import Card from "./Card";
 import MyWorksCard from "./MyWorksCard";
 import Tags from "./Tags";
 import TagsGrid from "./TagsGrid";
+import AdaptiveImage from "./AdaptiveImage";
 
 export {
   Logo,
@@ -32,4 +33,5 @@ export {
   MyWorksCard,
   Tags,
   TagsGrid,
+  AdaptiveImage,
 };
