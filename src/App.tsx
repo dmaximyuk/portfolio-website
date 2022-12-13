@@ -1,6 +1,12 @@
 import React from "react";
 
-import { About, Header, MyWorks, Services } from "./components/sections";
+import {
+  About,
+  Header,
+  MyWorks,
+  Services,
+  CareerPath,
+} from "./components/sections";
 
 const App: React.FC = () => {
   return (
@@ -9,6 +15,7 @@ const App: React.FC = () => {
       <About />
       <Services />
       <MyWorks />
+      <CareerPath />
     </>
   );
 };
