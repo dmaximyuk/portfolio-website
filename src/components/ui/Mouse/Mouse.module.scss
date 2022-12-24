@@ -1,0 +1,24 @@
+@import "../../../style/index.scss";
+
+.Mouse {
+  position: fixed;
+  z-index: 1;
+  background-color: $accent;
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  // mix-blend-mode: difference;
+  opacity: 0.6;
+
+  cursor: none;
+
+  &__bubble {
+    width: 30px;
+    height: 30px;
+    border: 5px solid $accent;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    border-radius: 10000px;
+  }
+}

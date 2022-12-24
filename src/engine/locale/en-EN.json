@@ -19,11 +19,11 @@
   "section.services.card.2.text": "Mauris quis risus convallis, vestibulum turpis et, pretium metus. Nam felis turpis, bibendum vel dolor porta, condimentum sagittis enim.",
   "section.myworks.subheader": "MY WORKS",
   "section.myworks.header": "Featured Portfolios",
-  "section.myworks.card.0.header": "Admin panel ",
-  "section.myworks.card.0.technology.0": "React JS",
-  "section.myworks.card.1.header": "Landing Page",
-  "section.myworks.card.1.technology.0": "HTML",
-  "section.myworks.card.1.technology.1": "CSS",
+  "section.myworks.card.0.header": "Landing Page",
+  "section.myworks.card.0.technology.0": "HTML",
+  "section.myworks.card.0.technology.1": "CSS",
+  "section.myworks.card.1.header": "Admin Dashboard ",
+  "section.myworks.card.1.technology.0": "React JS",
   "section.myworks.card.2.header": "Shop Website",
   "section.myworks.card.2.technology.0": "React JS"
 }

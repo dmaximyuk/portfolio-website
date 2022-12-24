@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+
+import { App } from "./App";
 import { LocaleProvider } from "./components/ui";
 
 const root = ReactDOM.createRoot(

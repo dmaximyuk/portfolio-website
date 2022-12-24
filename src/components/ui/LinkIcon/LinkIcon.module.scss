@@ -1,0 +1,17 @@
+@import "../../../style/index.scss";
+
+.LinkIcon {
+  transition: color 0.2s;
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $gray;
+  }
+
+  & > div > div > svg {
+    width: 24px;
+    height: 24px;
+    color: inherit;
+  }
+}

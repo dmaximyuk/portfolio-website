@@ -8,7 +8,7 @@ import {
   CareerPath,
 } from "./components/sections";
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   return (
     <>
       <Header />
@@ -19,5 +19,3 @@ const App: React.FC = () => {
     </>
   );
 };
-
-export default App;

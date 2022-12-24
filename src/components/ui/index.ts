@@ -1,37 +1,29 @@
-import Logo from "./Logo";
-import LocaleProvider from "./LocaleProvider";
-import Section from "./Section";
-import Header from "./Header";
-import Text from "./Text";
-import Subheader from "./Subheader";
-import LinkedIcon from "./LinkedIcon";
-import SocialIcons from "./SocialIcons";
-import ServicesCard from "./ServicesCard";
-import SectionHeader from "./SectionHeader";
-import IconButton from "./IconButton";
-import CardGrid from "./CardGrid";
-import Card from "./Card";
-import MyWorksCard from "./MyWorksCard";
-import Tags from "./Tags";
-import TagsGrid from "./TagsGrid";
-import AdaptiveImage from "./AdaptiveImage";
+// * Page Blocks
+export * from "./Section";
+export * from "./LocaleProvider";
 
-export {
-  Logo,
-  LocaleProvider,
-  Section,
-  Header,
-  Text,
-  Subheader,
-  LinkedIcon,
-  SocialIcons,
-  ServicesCard,
-  SectionHeader,
-  IconButton,
-  CardGrid,
-  Card,
-  MyWorksCard,
-  Tags,
-  TagsGrid,
-  AdaptiveImage,
-};
+// * Blocks
+export * from "./Card";
+export * from "./CardGrid";
+export * from "./ServicesCard";
+export * from "./MyWorksCard";
+export * from "./TagsGrid";
+export * from "./Tags";
+
+// * Typography
+export * from "./Text";
+export * from "./Subheader";
+export * from "./Header";
+export * from "./SectionHeader";
+
+// * Buttons
+export * from "./IconButton";
+export * from "./LinkIcon";
+
+// * Images or Icons
+export * from "./AdaptiveImage";
+export * from "./SocialIcons";
+
+// * Other
+export * from "./Logo";
+export * from "./Mouse";
