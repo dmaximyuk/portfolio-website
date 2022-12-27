@@ -1,0 +1,21 @@
+@import "../../../style/index.scss";
+
+.Container {
+  margin: 0 auto;
+  width: 76vw;
+  max-width: 1400px;
+  min-width: 300px;
+  background-color: inherit;
+
+  @include mq-laptop {
+    width: 86vw;
+  }
+
+  @include mq-tablet {
+    width: calc(100% - 64px);
+  }
+
+  @include mq-phone {
+    width: calc(100% - 40px);
+  }
+}

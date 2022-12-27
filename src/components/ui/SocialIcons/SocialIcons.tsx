@@ -12,22 +12,22 @@ export const SocialIcons: FC<ISocialIconsProps> = (props) => {
     {
       key: "tg",
       href: "https://t.me/d_maximyuk",
-      icon: <p>TG</p>,
+      icon: <span>TG</span>,
     },
     {
       key: "vk",
       href: "https://vk.com/d_maximyuk",
-      icon: <p>VK</p>,
+      icon: <span>VK</span>,
     },
     {
       key: "gh",
       href: "https://github.com/dmaximyuk",
-      icon: <p>GH</p>,
+      icon: <span>GH</span>,
     },
     {
       key: "hh",
       href: "https://hh.ru/resume/f5f7a20bff0b2688420039ed1f3069454f6135",
-      icon: <p>HH</p>,
+      icon: <span>HH</span>,
     },
   ];
 

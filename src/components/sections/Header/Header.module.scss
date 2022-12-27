@@ -1,2 +1,62 @@
+@import "../../../style/index.scss";
+
 .Header {
+  &,
+  &__inherit {
+    position: relative;
+    height: $header-default-size;
+    background-color: $white;
+
+    @include mq-laptop {
+      height: $header-laptop-size;
+    }
+
+    @include mq-tablet {
+      height: $header-tablet-size;
+    }
+  }
+
+  &__inherit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s;
+
+    &_active {
+      box-shadow: 0px 7px 14px rgb(0 0 0 / 5%);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 100%;
+
+    @include mq-laptop {
+      gap: 24px;
+    }
+
+    @include mq-tablet {
+      gap: 16px;
+    }
+
+    & > a {
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

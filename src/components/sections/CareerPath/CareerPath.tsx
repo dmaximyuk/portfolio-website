@@ -7,7 +7,7 @@ import { ICareerPathProps } from ".";
 import styles from "./CareerPath.module.scss";
 
 export const CareerPath: FC<ICareerPathProps> = (props) => {
-  const id = "section.myworks";
+  const id = "section.careerpath";
 
   return (
     <Section {...props} type="gray">

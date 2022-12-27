@@ -21,9 +21,7 @@
   }
 
   @include mq-phone {
-    height: auto;
     padding: $adaptive-padding-phone 0;
-    max-height: none;
   }
 
   @include mq-wq-desktop {
@@ -36,23 +34,6 @@
     display: flex;
     align-items: space-between;
     flex-direction: column;
-    background-color: inherit;
-    margin: 0 auto;
-    width: 76vw;
-    max-width: 1400px;
-    min-width: 300px;
-
-    @include mq-laptop {
-      width: 86vw;
-    }
-
-    @include mq-tablet {
-      width: calc(100% - 64px);
-    }
-
-    @include mq-phone {
-      width: calc(100% - 40px);
-    }
   }
 
   &_color {
@@ -61,7 +42,7 @@
     }
 
     &-gray {
-      background-color: $light-gray;
+      background-color: $alternative-lighter-gray;
     }
   }
 }

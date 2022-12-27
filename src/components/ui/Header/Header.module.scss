@@ -24,6 +24,11 @@
     &-xl {
       font-size: 45px;
       line-height: 55px;
+
+      @include mq-tablet {
+        font-size: 32px;
+        line-height: 42px;
+      }
     }
   }
 }

@@ -1,0 +1,12 @@
+@import "../../../style/index.scss";
+
+.Link {
+  color: $black;
+  transition: 0.2s;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $accent;
+  }
+}

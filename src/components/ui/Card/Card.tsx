@@ -14,7 +14,10 @@ export const Card: FC<ICardProps> = ({
   return (
     <div
       className={cn(styles.Card, styles[`Card_type-${type}`], className)}
-      {...props}
+      onMouseEnter={props.onMouseEnter}
+      onMouseUp={props.onMouseUp}
+      onMouseLeave={props.onMouseLeave}
+      onMouseMove={props.onMouseMove}
     >
       {children}
     </div>

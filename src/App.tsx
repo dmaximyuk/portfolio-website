@@ -6,6 +6,7 @@ import {
   MyWorks,
   Services,
   CareerPath,
+  Footer,
 } from "./components/sections";
 
 export const App: React.FC = () => {
@@ -16,6 +17,7 @@ export const App: React.FC = () => {
       <Services />
       <MyWorks />
       <CareerPath />
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,8 @@
 import { FC } from "react";
 import cn from "classnames";
 
+import { Container } from "..";
+
 import { ISectionProps } from ".";
 
 import styles from "./Section.module.scss";
@@ -13,9 +15,9 @@ export const Section: FC<ISectionProps> = (props) => {
         [styles[`Section_color-${props.type}`]]: true,
       })}
     >
-      <div className={cn(styles.Section__container, props.className)}>
+      <Container className={cn(styles.Section__container, props.className)}>
         {props.children}
-      </div>
+      </Container>
     </section>
   );
 };

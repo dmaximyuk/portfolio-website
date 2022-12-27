@@ -5,6 +5,12 @@
     position: relative;
 
     &:hover {
+      & > .MyWorksCard__img {
+        & > div > img {
+          filter: blur(3px);
+        }
+      }
+
       & > .MyWorksCard__container-header {
         gap: 18px;
       }
@@ -65,6 +71,7 @@
       top: 0;
       left: 0;
       z-index: 2;
+      cursor: none;
     }
   }
 }

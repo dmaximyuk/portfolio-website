@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { useIntl } from "react-intl";
 
 import { Text, Section, SocialIcons, SectionHeader } from "../../ui";
 
@@ -10,6 +11,9 @@ import styles from "./About.module.scss";
 
 export const About: FC<IAboutProps> = (props) => {
   const id = "section.about";
+  const intl = useIntl();
+  const userName = intl.formatMessage({ id: `${id}.me.text` });
+  const userExp = "2";
 
   return (
     <Section {...props} className={styles.About} type="white">
@@ -18,7 +22,7 @@ export const About: FC<IAboutProps> = (props) => {
           subheaderId={`${id}.subheader`}
           headerId={`${id}.me.header`}
         />
-        <Text id={`${id}.me.text`} values={{ exp: 2 }} />
+        <Text>{userName.replace(/{exp}/, userExp)}</Text>
         <SocialIcons />
       </div>
       <div className={styles["About__container-image"]}>

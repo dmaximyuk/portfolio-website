@@ -16,5 +16,9 @@
 
   &__header {
     margin-bottom: 72px;
+
+    @include mq-tablet {
+      margin-bottom: 65px;
+    }
   }
 }

@@ -1,4 +1,4 @@
-export interface I{{pascalCase}}Props 
+export interface IFooterProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLElement>,
     HTMLElement

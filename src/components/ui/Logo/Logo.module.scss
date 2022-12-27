@@ -1,2 +1,32 @@
+@import "../../../style/index.scss";
+
 .Logo {
+  & {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__header,
+  &__text {
+    font: {
+      size: 20px;
+      weight: bold;
+    }
+  }
+
+  &__text {
+    color: $white;
+  }
+
+  &__container {
+    width: 32px;
+    height: 32px;
+    background-color: $black;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+  }
 }

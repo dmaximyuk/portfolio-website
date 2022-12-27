@@ -13,25 +13,41 @@ export const MyWorksCard: FC<IMyWorksCardProps> = (props) => {
     useState<TMousePosition>(undefined);
   const [isCursorVisible, setCursorVisible] = useState<boolean>(false);
 
+  const onEnter = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    setCursorVisible(true);
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const onMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const isCursorSupport =
+    "ontouchmove" in window
+      ? {}
+      : {
+          first: {
+            onMouseEnter: onEnter,
+          },
+          second: {
+            onMouseMove: onMove,
+          },
+        };
+
   return (
     <>
       <Card
         type="border"
         style={{ cursor: isCursorVisible ? "none" : "default" }}
         className={cn(styles.MyWorksCard, props.className)}
-        onMouseEnter={(e) => {
-          setCursorVisible(true);
-          setCursorPosition({ x: e.clientX, y: e.clientY });
-        }}
+        {...isCursorSupport?.first}
         onMouseLeave={() => setCursorVisible(false)}
       >
         {isCursorVisible && (
           <>
             <div
               className={styles["MyWorksCard__mouse-overlay"]}
-              onMouseMove={(e) =>
-                setCursorPosition({ x: e.clientX, y: e.clientY })
-              }
+              {...isCursorSupport?.second}
               onMouseLeave={(e) => setCursorPosition(undefined)}
             />
             <Mouse
@@ -55,7 +71,7 @@ export const MyWorksCard: FC<IMyWorksCardProps> = (props) => {
 
         <TagsGrid className={styles.MyWorksCard__tags}>
           {Array.from(Array(props.tagsCount), (_, i) => (
-            <Tags id={`${props.tagsId}.${i}`} />
+            <Tags key={`myworks-card-tag-${i}`} id={`${props.tagsId}.${i}`} />
           ))}
         </TagsGrid>
       </Card>

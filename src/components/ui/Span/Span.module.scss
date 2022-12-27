@@ -1,0 +1,31 @@
+@import "../../../style/index.scss";
+
+.Span {
+  font: {
+    family: $fonts-family-text;
+    weight: $font-weight-text;
+    style: normal;
+  }
+
+  &_size {
+    &-s {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &-m {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &-l {
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    &-xl {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}

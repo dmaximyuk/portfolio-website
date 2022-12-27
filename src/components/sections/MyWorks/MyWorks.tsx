@@ -12,7 +12,6 @@ import styles from "./MyWorks.module.scss";
 
 export const MyWorks: FC<IMyWorksProps> = (props) => {
   const id = "section.myworks";
-  const cardsTags = [2, 1, 1];
   const images = [LandingPhoto, DashboardPhoto, ShopPhoto];
 
   return (
@@ -29,7 +28,7 @@ export const MyWorks: FC<IMyWorksProps> = (props) => {
               key={`my-works-card-id${i}`}
               src={images[i]}
               headerId={`${id}.card.${i}.header`}
-              tagsCount={cardsTags[i]}
+              tagsCount={1}
               tagsId={`${id}.card.${i}.technology`}
             />
           );
