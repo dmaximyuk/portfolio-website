@@ -7,13 +7,13 @@ import { ITextProps } from ".";
 
 import styles from "./Text.module.scss";
 
-export const Text: FC<ITextProps> = ({ size = "l", ...props }) => {
+export const Text: FC<ITextProps> = (props) => {
   if (props.children) {
     return (
       <p
         className={cn(
           styles.Text,
-          styles[`Text_size-${size}`],
+          styles[`Text_size-${props.size}`],
           props.className
         )}
       >
@@ -28,7 +28,7 @@ export const Text: FC<ITextProps> = ({ size = "l", ...props }) => {
         <p
           className={cn(
             styles.Text,
-            styles[`Text_size-${size}`],
+            styles[`Text_size-${props.size}`],
             props.className
           )}
         >
@@ -37,4 +37,8 @@ export const Text: FC<ITextProps> = ({ size = "l", ...props }) => {
       )}
     </FormattedMessage>
   );
+};
+
+Text.defaultProps = {
+  size: "l",
 };

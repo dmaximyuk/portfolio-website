@@ -9,9 +9,22 @@ import styles from "./Button.module.scss";
 
 export const Button: FC<IButtonProps> = (props) => {
   return (
-    <button {...props} className={cn(styles.Button, props.className)}>
+    <button
+      className={cn(
+        styles.Button,
+        styles[`Button__${props.type}`],
+        props.isActive && styles[`Button__${props.type}_active`],
+        props.className
+      )}
+      onClick={props.onClick}
+    >
       <Span>{props.children}</Span>
       <Ripple />
     </button>
   );
+};
+
+Button.defaultProps = {
+  type: "default",
+  isActive: false,
 };

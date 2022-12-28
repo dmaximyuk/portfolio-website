@@ -1,5 +1,8 @@
 export interface IButtonProps
   extends React.DetailedHTMLProps<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    React.HTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
-  > {}
+  > {
+  type?: "default" | "filled";
+  isActive?: boolean;
+}

@@ -14,8 +14,6 @@ export const Mouse: FC<IMouseProps> = (props) => {
         left: (props.cursorPosition?.x || 0) - 6,
         display: !props.cursorPosition ? "none" : "block",
       }}
-    >
-      <div className={styles.Mouse__bubble} />
-    </div>
+    />
   );
 };

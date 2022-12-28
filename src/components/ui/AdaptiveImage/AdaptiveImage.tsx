@@ -12,7 +12,7 @@ export const AdaptiveImage: FC<IAdaptiveImageProps> = (props) => {
         <img
           className={cn(
             styles.AdaptiveImage__img,
-            styles[`AdaptiveImage_position-${props.imagePosition || "lt"}`]
+            styles[`AdaptiveImage_position-${props.imagePosition}`]
           )}
           src={props.src}
           alt=""
@@ -21,4 +21,8 @@ export const AdaptiveImage: FC<IAdaptiveImageProps> = (props) => {
       </div>
     </div>
   );
+};
+
+AdaptiveImage.defaultProps = {
+  imagePosition: "lt",
 };
