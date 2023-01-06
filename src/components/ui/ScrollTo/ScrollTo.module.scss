@@ -1,0 +1,11 @@
+@import "../../../style/index.scss";
+
+.ScrollTo {
+  color: $black;
+  transition: 0.2s;
+
+  &:hover,
+  &:active {
+    color: $accent;
+  }
+}

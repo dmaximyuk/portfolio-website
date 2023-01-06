@@ -19,7 +19,7 @@ export const Button: FC<IButtonProps> = (props) => {
       onClick={props.onClick}
     >
       <Span>{props.children}</Span>
-      <Ripple />
+      {props.isRippled && <Ripple />}
     </button>
   );
 };

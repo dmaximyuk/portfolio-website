@@ -16,7 +16,7 @@ export const About: FC<IAboutProps> = (props) => {
   const userExp = "2";
 
   return (
-    <Section {...props} className={styles.About} type="white">
+    <Section id="about" className={styles.About} type="white">
       <div className={styles["About__container-text"]}>
         <SectionHeader
           subheaderId={`${id}.subheader`}

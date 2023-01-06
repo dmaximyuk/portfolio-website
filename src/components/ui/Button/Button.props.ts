@@ -4,5 +4,6 @@ export interface IButtonProps
     HTMLButtonElement
   > {
   type?: "default" | "filled";
+  isRippled?: boolean;
   isActive?: boolean;
 }

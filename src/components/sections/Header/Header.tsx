@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import { useIntl } from "react-intl";
 import cn from "classnames";
 
-import { Button, Container, Link, Logo } from "../../ui";
+import { Button, Container, Logo, ScrollTo, TSectionIds } from "../../ui";
 
 import { IHeaderProps } from ".";
 
@@ -13,7 +13,12 @@ export const Header: FC<IHeaderProps> = (props) => {
   const intl = useIntl();
 
   const id = "header";
-  const links = ["#services", "#portfolio", "#experience", "#blog"];
+  const links: Array<TSectionIds> = [
+    "services",
+    "portfolio",
+    "experience",
+    "blog",
+  ];
 
   const scroll = (e: Event) => {
     setScrolledStatus(window.scrollY >= 60 || window.pageYOffset >= 60);
@@ -25,7 +30,11 @@ export const Header: FC<IHeaderProps> = (props) => {
   }, []);
 
   return (
-    <header {...props} className={cn(styles.Header, props.className)}>
+    <header
+      {...props}
+      id="header"
+      className={cn(styles.Header, props.className)}
+    >
       <div
         className={cn(
           styles.Header__inherit,
@@ -37,16 +46,16 @@ export const Header: FC<IHeaderProps> = (props) => {
           <div className={styles.Header__links}>
             {Array.from(Array(links.length), (_, i) => {
               return (
-                <Link key={`header-center-link-${i}`} href={links[i]}>
+                <ScrollTo key={`header-center-link-${i}`} to={links[i]}>
                   {intl.formatMessage({
                     id: `${id}.navigation.button.center.title.${i}`,
                   })}
-                </Link>
+                </ScrollTo>
               );
             })}
           </div>
           <div>
-            <Button>Resume</Button>
+            <Button isRippled>Resume</Button>
           </div>
         </Container>
       </div>

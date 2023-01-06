@@ -1,5 +1,4 @@
 import { FC, useState, useLayoutEffect } from "react";
-import cn from "classnames";
 
 import { IRippleProps } from ".";
 

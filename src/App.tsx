@@ -8,6 +8,7 @@ import {
   CareerPath,
   Footer,
 } from "./components/sections";
+// import { ScrollToTop } from "./components/ui";
 
 export const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ export const App: React.FC = () => {
       <MyWorks />
       <CareerPath />
       <Footer />
+      {/* <ScrollToTop /> */}
     </>
   );
 };

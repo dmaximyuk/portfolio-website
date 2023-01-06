@@ -10,10 +10,14 @@ import styles from "./Section.module.scss";
 export const Section: FC<ISectionProps> = (props) => {
   return (
     <section
-      className={cn({
-        [styles["Section"]]: true,
-        [styles[`Section_color-${props.type}`]]: true,
-      })}
+      id={props.id}
+      className={cn(
+        {
+          [styles["Section"]]: true,
+          [styles[`Section_color-${props.type}`]]: true,
+        },
+        props.className
+      )}
     >
       <Container className={cn(styles.Section__container, props.className)}>
         {props.children}

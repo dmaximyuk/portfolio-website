@@ -1,6 +1,11 @@
 @import "../../../style/index.scss";
 
 .SectionHeader {
+  &__subheader,
+  &__header {
+    white-space: nowrap;
+  }
+
   &__subheader {
     @include mq-tablet {
       margin-bottom: 0 !important;

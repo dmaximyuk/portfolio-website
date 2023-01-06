@@ -15,7 +15,7 @@ export const Services: FC<IServicesProps> = (props) => {
   const images = [IconWebDev, IconBackend, IconMobileDev];
 
   return (
-    <Section className={styles.Services} type="gray">
+    <Section id="services" className={styles.Services} type="gray">
       <SectionHeader
         className={styles.Services__header}
         subheaderId={`${id}.subheader`}

@@ -1,0 +1,23 @@
+@import "../../../style/index.scss";
+
+.List {
+  & {
+    color: $gray;
+    font-size: 16px;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+    font-weight: 900;
+    line-height: 28px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "\2014";
+      margin-right: 8px;
+    }
+  }
+}

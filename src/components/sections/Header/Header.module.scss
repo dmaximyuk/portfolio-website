@@ -50,6 +50,7 @@
 
     @include mq-tablet {
       gap: 16px;
+      display: none;
     }
 
     & > a {

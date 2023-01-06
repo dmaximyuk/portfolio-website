@@ -1,0 +1,18 @@
+@import "../../../style/index.scss";
+
+.Column {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+
+  &_side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @include mq-phone {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}

@@ -15,7 +15,7 @@ export const MyWorks: FC<IMyWorksProps> = (props) => {
   const images = [LandingPhoto, DashboardPhoto, ShopPhoto];
 
   return (
-    <Section {...props} type="white">
+    <Section id="portfolio" type="white">
       <SectionHeader
         className={styles.MyWorks__header}
         headerId={`${id}.header`}
