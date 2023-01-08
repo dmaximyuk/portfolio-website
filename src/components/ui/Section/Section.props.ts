@@ -3,7 +3,10 @@ export type TSectionIds =
   | "services"
   | "portfolio"
   | "experience"
-  | "blog";
+  | "blog"
+  | "skills";
+
+export type TSectionType = "white" | "gray";
 
 export interface ISectionProps
   extends React.DetailedHTMLProps<

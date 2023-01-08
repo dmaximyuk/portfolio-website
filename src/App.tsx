@@ -1,4 +1,4 @@
-import React from "react";
+import { FC, useEffect } from "react";
 
 import {
   About,
@@ -7,19 +7,29 @@ import {
   Services,
   CareerPath,
   Footer,
+  LearningPath,
 } from "./components/sections";
-// import { ScrollToTop } from "./components/ui";
 
-export const App: React.FC = () => {
+export const App: FC = () => {
+  const scroll = (e: Event) => {
+    console.log(e);
+  };
+
+  // * Scroll Tracking
+  useEffect(() => {
+    window.addEventListener("scroll", scroll, false);
+    return () => window.removeEventListener("scroll", scroll, false);
+  }, []);
+
   return (
     <>
-      <Header />
-      <About />
-      <Services />
-      <MyWorks />
-      <CareerPath />
-      <Footer />
-      {/* <ScrollToTop /> */}
+      <Header type="white" />
+      <About type="white" />
+      <Services type="gray" />
+      <MyWorks type="white" />
+      <CareerPath type="gray" />
+      <LearningPath type="white" />
+      <Footer type="gray" />
     </>
   );
 };

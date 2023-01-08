@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import { IntlProvider } from "react-intl";
 
-import { localeEn, localeRu } from "../../../engine/locale";
+import { localeEn, localeRu } from "engine/locale";
 
 import { ILocaleProviderProps } from ".";
 

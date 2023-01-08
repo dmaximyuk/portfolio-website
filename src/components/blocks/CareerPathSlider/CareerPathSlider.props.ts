@@ -1,9 +1,8 @@
-import { TSectionType } from "components/ui";
-
-export interface IServicesProps
+export interface ICareerPathSliderProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
   > {
-  type: TSectionType;
+  sliders: Array<number>;
+  tagsCount: Array<number>;
 }

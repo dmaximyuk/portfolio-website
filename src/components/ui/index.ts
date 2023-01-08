@@ -5,8 +5,6 @@ export * from "./LocaleProvider";
 // * Blocks
 export * from "./Card";
 export * from "./CardGrid";
-export * from "./ServicesCard";
-export * from "./MyWorksCard";
 export * from "./TagsGrid";
 export * from "./Tags";
 export * from "./Container";
@@ -32,10 +30,11 @@ export * from "./ScrollTo";
 
 // * Images or Icons
 export * from "./AdaptiveImage";
-export * from "./SocialIcons";
+
+// * Progresses or Loaders
+export * from "./ProgressBar";
 
 // * Other
-export * from "./Logo";
 export * from "./Mouse";
 export * from "./Ripple";
 export * from "./AnimationToScroll";

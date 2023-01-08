@@ -1,7 +1,7 @@
 import { FC } from "react";
 import cn from "classnames";
 
-import { Header, ScrollTo, Text } from "..";
+import { Header, ScrollTo, Text } from "components/ui";
 
 import { ILogoProps } from ".";
 

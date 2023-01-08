@@ -1,12 +1,13 @@
 import { FC } from "react";
 
-import { CardGrid, Section, SectionHeader, ServicesCard } from "../../ui";
+import { ServicesCard } from "components/blocks";
+import { CardGrid, Section, SectionHeader } from "components/ui";
+
+import IconWebDev from "assets/icons/services/shape.svg";
+import IconBackend from "assets/icons/services/layers.svg";
+import IconMobileDev from "assets/icons/services/crown.svg";
 
 import { IServicesProps } from ".";
-
-import IconWebDev from "../../../assets/icons/services/shape.svg";
-import IconBackend from "../../../assets/icons/services/layers.svg";
-import IconMobileDev from "../../../assets/icons/services/crown.svg";
 
 import styles from "./Services.module.scss";
 
@@ -15,7 +16,7 @@ export const Services: FC<IServicesProps> = (props) => {
   const images = [IconWebDev, IconBackend, IconMobileDev];
 
   return (
-    <Section id="services" className={styles.Services} type="gray">
+    <Section id="services" className={styles.Services} type={props.type}>
       <SectionHeader
         className={styles.Services__header}
         subheaderId={`${id}.subheader`}

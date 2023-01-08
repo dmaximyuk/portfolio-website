@@ -1,0 +1,25 @@
+@import "../../../style/index.scss";
+
+.LearningPath {
+  &__text {
+    color: $gray;
+    line-height: 32px;
+    margin-bottom: 64px;
+    max-width: 550px;
+  }
+
+  &__skill-header {
+    font: {
+      weight: 500;
+      size: 14px;
+    }
+
+    line-height: 17px;
+  }
+
+  &__progressbar {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    max-width: 450px;
+  }
+}

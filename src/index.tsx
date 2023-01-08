@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RecoilRoot } from "recoil";
 
 import { App } from "./App";
 import { LocaleProvider } from "./components/ui";
@@ -10,8 +11,10 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <LocaleProvider>
-      <App />
-    </LocaleProvider>
+    <RecoilRoot>
+      <LocaleProvider>
+        <App />
+      </LocaleProvider>
+    </RecoilRoot>
   </React.StrictMode>
 );

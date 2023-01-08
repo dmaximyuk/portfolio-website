@@ -1,14 +1,26 @@
-import { FC } from "react";
-import cn from "classnames";
+import { atom } from "recoil";
 
-import { LinkIcon } from "..";
+import { type ReactNode } from "react";
 
-import { ISocialIconsProps } from ".";
+export const ME_EXPERIENCE = atom<string>({
+  key: "me_experience",
+  default: "2",
+});
 
-import styles from "./SocialIcons.module.scss";
+export const CAREER_PATH_SLIDER = atom<number>({
+  key: "career_path_slider",
+  default: 0,
+});
 
-export const SocialIcons: FC<ISocialIconsProps> = (props) => {
-  const links = [
+export const SOCIAL_ICONS_LINKS = atom<
+  Array<{
+    key: string;
+    href: string;
+    icon: ReactNode;
+  }>
+>({
+  key: "social_icons_links",
+  default: [
     {
       key: "tg",
       href: "https://t.me/d_maximyuk",
@@ -29,13 +41,5 @@ export const SocialIcons: FC<ISocialIconsProps> = (props) => {
       href: "https://hh.ru/resume/f5f7a20bff0b2688420039ed1f3069454f6135",
       icon: <span>HH</span>,
     },
-  ];
-
-  return (
-    <div className={cn(styles.SocialIcons, props.className)}>
-      {links.map((el) => (
-        <LinkIcon {...el} />
-      ))}
-    </div>
-  );
-};
+  ],
+});

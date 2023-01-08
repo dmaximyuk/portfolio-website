@@ -1,13 +1,22 @@
 @import "../../../style/index.scss";
 
 .Footer {
-  background-color: $white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 40px 0;
   color: $alternative-gray;
+
+  &_type {
+    &-white {
+      background-color: $white;
+    }
+
+    &-gray {
+      background-color: $alternative-lighter-gray;
+    }
+  }
 
   &__socials {
     width: auto;

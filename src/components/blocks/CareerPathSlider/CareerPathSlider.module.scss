@@ -1,0 +1,61 @@
+@import "../../../style/index.scss";
+
+.CareerPathSlider {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  &__left_side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__right_side {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+
+    &__wrapper {
+      position: absolute;
+      transition: transform 0.6s;
+      width: 100%;
+
+      &-slide {
+        height: 550px;
+        transition: opacity 1s;
+
+        &-tags {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  &__separator {
+    height: 1px;
+    width: 100%;
+    margin-top: 32.04px;
+    margin-bottom: 32.65px;
+    background-color: $alternative-gray;
+  }
+
+  &__text {
+    &-header {
+      font-size: 18px;
+    }
+
+    &-subheader {
+      color: $gray;
+      margin-top: 8px;
+    }
+
+    &-description {
+      color: $gray;
+      margin-top: 16px;
+    }
+  }
+}

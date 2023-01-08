@@ -1,9 +1,13 @@
 import { FC } from "react";
 import { useIntl } from "react-intl";
+import { useRecoilValue } from "recoil";
 
-import { Text, Section, SocialIcons, SectionHeader } from "../../ui";
+import { SocialIcons } from "components/blocks";
+import { Text, Section, SectionHeader } from "components/ui";
 
-import AboutPhoto from "../../../assets/photos/about_3.jpg";
+import { ME_EXPERIENCE } from "engine/state";
+
+import AboutPhoto from "assets/photos/about_3.jpg";
 
 import { IAboutProps } from ".";
 
@@ -13,7 +17,7 @@ export const About: FC<IAboutProps> = (props) => {
   const id = "section.about";
   const intl = useIntl();
   const userName = intl.formatMessage({ id: `${id}.me.text` });
-  const userExp = "2";
+  const userExp = useRecoilValue(ME_EXPERIENCE);
 
   return (
     <Section id="about" className={styles.About} type="white">

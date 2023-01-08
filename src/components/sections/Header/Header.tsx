@@ -2,7 +2,8 @@ import { FC, useEffect, useState } from "react";
 import { useIntl } from "react-intl";
 import cn from "classnames";
 
-import { Button, Container, Logo, ScrollTo, TSectionIds } from "../../ui";
+import { Logo } from "components/blocks";
+import { Button, Container, ScrollTo, TSectionIds } from "components/ui";
 
 import { IHeaderProps } from ".";
 
@@ -17,17 +18,8 @@ export const Header: FC<IHeaderProps> = (props) => {
     "services",
     "portfolio",
     "experience",
-    "blog",
+    "skills",
   ];
-
-  const scroll = (e: Event) => {
-    setScrolledStatus(window.scrollY >= 60 || window.pageYOffset >= 60);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", scroll, false);
-    return () => window.removeEventListener("scroll", scroll, false);
-  }, []);
 
   return (
     <header
@@ -38,7 +30,8 @@ export const Header: FC<IHeaderProps> = (props) => {
       <div
         className={cn(
           styles.Header__inherit,
-          isScrolled && styles.Header__inherit_active
+          isScrolled && styles.Header__inherit_active,
+          styles[`Header__inherit_type-${props.type}`]
         )}
       >
         <Container className={styles.Header__container}>

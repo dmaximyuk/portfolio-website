@@ -1,6 +1,6 @@
 import { TSectionType } from "components/ui";
 
-export interface IAboutProps
+export interface ILearningPathProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLElement>,
     HTMLElement

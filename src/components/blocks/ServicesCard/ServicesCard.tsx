@@ -1,7 +1,7 @@
 import { FC } from "react";
 import cn from "classnames";
 
-import { Text, Header, IconButton, Card } from "..";
+import { Text, Header, IconButton, Card } from "components/ui";
 
 import { IServicesCardProps } from ".";
 

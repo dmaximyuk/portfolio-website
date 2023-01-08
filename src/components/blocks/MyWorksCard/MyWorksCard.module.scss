@@ -3,6 +3,7 @@
 .MyWorksCard {
   & {
     position: relative;
+    cursor: pointer;
 
     &:hover {
       & > .MyWorksCard__img {

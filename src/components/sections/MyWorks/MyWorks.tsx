@@ -1,10 +1,11 @@
 import { FC } from "react";
 
-import { MyWorksCard, CardGrid, Section, SectionHeader } from "../../ui";
+import { MyWorksCard } from "components/blocks";
+import { CardGrid, Section, SectionHeader } from "components/ui";
 
-import LandingPhoto from "../../../assets/photos/landing.png";
-import DashboardPhoto from "../../../assets/photos/dashboard.png";
-import ShopPhoto from "../../../assets/photos/shop.png";
+import LandingPhoto from "assets/photos/landing.png";
+import DashboardPhoto from "assets/photos/dashboard.png";
+import ShopPhoto from "assets/photos/shop.png";
 
 import { IMyWorksProps } from ".";
 
@@ -15,7 +16,7 @@ export const MyWorks: FC<IMyWorksProps> = (props) => {
   const images = [LandingPhoto, DashboardPhoto, ShopPhoto];
 
   return (
-    <Section id="portfolio" type="white">
+    <Section id="portfolio" type={props.type}>
       <SectionHeader
         className={styles.MyWorks__header}
         headerId={`${id}.header`}

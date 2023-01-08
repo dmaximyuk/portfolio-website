@@ -1,0 +1,17 @@
+@import "../../../style/index.scss";
+
+.CareerPathSide {
+  &__header {
+    margin-bottom: 0px;
+  }
+
+  &__button {
+    text-align: start;
+    width: 100%;
+    max-width: 350px;
+
+    @include mq-phone {
+      max-width: none;
+    }
+  }
+}
