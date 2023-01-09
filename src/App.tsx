@@ -1,4 +1,5 @@
 import { FC, useEffect } from "react";
+import { useSetRecoilState } from "recoil";
 
 import {
   About,
@@ -10,9 +11,13 @@ import {
   LearningPath,
 } from "./components/sections";
 
+import { WINDOW_SCROLL } from "engine/state";
+
 export const App: FC = () => {
+  const setWindow = useSetRecoilState(WINDOW_SCROLL);
+
   const scroll = (e: Event) => {
-    console.log(e);
+    setWindow(e);
   };
 
   // * Scroll Tracking

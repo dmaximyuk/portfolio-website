@@ -1,25 +1,34 @@
 import { FC, useEffect, useState } from "react";
 import { useIntl } from "react-intl";
+import { useRecoilValue } from "recoil";
 import cn from "classnames";
 
 import { Logo } from "components/blocks";
 import { Button, Container, ScrollTo, TSectionIds } from "components/ui";
+
+import { WINDOW_SCROLL } from "engine/state";
 
 import { IHeaderProps } from ".";
 
 import styles from "./Header.module.scss";
 
 export const Header: FC<IHeaderProps> = (props) => {
-  const [isScrolled, setScrolledStatus] = useState<boolean>(false);
-  const intl = useIntl();
-
   const id = "header";
+
+  const intl = useIntl();
+  const scroll = useRecoilValue(WINDOW_SCROLL);
+  const [isScrolled, setStatusScrolled] = useState<boolean>(false);
+
   const links: Array<TSectionIds> = [
     "services",
     "portfolio",
     "experience",
     "skills",
   ];
+
+  useEffect(() => {
+    setStatusScrolled(window.scrollY >= 60 || window.pageYOffset >= 60);
+  }, [scroll]);
 
   return (
     <header

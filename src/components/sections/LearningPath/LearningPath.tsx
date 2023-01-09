@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { useRecoilValue } from "recoil";
 import cn from "classnames";
 
 import {
@@ -18,7 +17,6 @@ import styles from "./LearningPath.module.scss";
 
 export const LearningPath: FC<ILearningPathProps> = (props) => {
   const id = "section.learningpath";
-  const userExp = useRecoilValue(ME_EXPERIENCE);
 
   return (
     <Section
@@ -34,7 +32,7 @@ export const LearningPath: FC<ILearningPathProps> = (props) => {
         <Text
           className={styles.LearningPath__text}
           id={`${id}.skill.text`}
-          values={{ exp: userExp }}
+          values={{ exp: ME_EXPERIENCE }}
         />
 
         <Text size="m" id={`${id}.skill.0`} />

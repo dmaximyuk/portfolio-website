@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { useIntl } from "react-intl";
-import { useRecoilValue } from "recoil";
 
 import { SocialIcons } from "components/blocks";
 import { Text, Section, SectionHeader } from "components/ui";
@@ -17,7 +16,6 @@ export const About: FC<IAboutProps> = (props) => {
   const id = "section.about";
   const intl = useIntl();
   const userName = intl.formatMessage({ id: `${id}.me.text` });
-  const userExp = useRecoilValue(ME_EXPERIENCE);
 
   return (
     <Section id="about" className={styles.About} type="white">
@@ -26,7 +24,7 @@ export const About: FC<IAboutProps> = (props) => {
           subheaderId={`${id}.subheader`}
           headerId={`${id}.me.header`}
         />
-        <Text>{userName.replace(/{exp}/, userExp)}</Text>
+        <Text>{userName.replace(/{exp}/, ME_EXPERIENCE)}</Text>
         <SocialIcons />
       </div>
       <div className={styles["About__container-image"]}>
